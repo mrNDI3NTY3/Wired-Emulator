@@ -152,9 +152,3 @@ class condition():
     def match_furni(obj:object, route:int, state:int)->bool:
         """This function works as a condition that can compare the saved direction, state and position with the current one in furni"""
         return (obj.current_route == route) == (obj.current_state == state)
-
-me = player("gov", 3, 3)
-furn = furni(3, 3, 3, 3, 51, 2)
-print(me.get_position("xy"))
-effect.teleporter(me, furn)
-print(me.get_position("xy"))
