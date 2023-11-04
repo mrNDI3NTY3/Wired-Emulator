@@ -107,6 +107,9 @@ class furni():
             self.FurniPosition[0] = value
         if mode == "y":
             self.FurniPosition[1] = value
+    
+    def get_state(self)-> int:
+        return self.current_state
 
 class trigger():
 
